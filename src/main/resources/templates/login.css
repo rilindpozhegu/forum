@@ -4,23 +4,25 @@ body {
     padding: 0px;
     font-family: 'Varela Round';
 }
-.nav-logo img{
-    width: 40px;
-    height: 40px;
+.nav-logo img {
+    width: 100px;
+    height: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
-.loginphoto {
+.login-photo {
     width: 120px;
     height: 120px;
     border-radius: 100%;
 }
-.etc-login-form {
+.login-form {
     color: #919191;
     padding: 10px 20px;
 }
-.etc-login-form p {
+.login-form p {
     margin-bottom: 5px;
 }
-
 .login-form-1 {
     width: 340px;
     border-radius: 5px;
@@ -66,7 +68,6 @@ body {
 .login-group-checkbox {
     padding: 5px 0;
 }
-
 .login-form-1 .login-button {
     position: absolute;
     right: -25px;
@@ -129,36 +130,27 @@ body {
     background-color: #484848;
     height: 70px;
 }
-.logologin {
-    padding: 10px 0px 10px 60px;
-    height: 50px;
-    width: 50px;
-}
-.social {
-     -webkit-transform: scale(0.8);
-     /* Browser Variations: */
-     
-     -moz-transform: scale(0.8);
-     -o-transform: scale(0.8);
-     -webkit-transition-duration: 0.5s;
-     -moz-transition-duration: 0.5s;
-     -o-transition-duration: 0.5s;
- }
-
 /*
-    Multicoloured Hover Variations
+    Social-Network
 */
- 
- #social-fb:hover {
-     color: #3B5998;
- }
- #social-tw:hover {
-     color: #4099FF;
- }
- #social-gp:hover {
-     color: #d34836;
- }
- #social-em:hover {
-     color: #f39c12;
- }
 
+.social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: #f39c12;
+}

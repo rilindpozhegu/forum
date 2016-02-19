@@ -1,5 +1,9 @@
-.body1 {
-    padding-top: 60px;
+body, html{
+    padding: 0px;
+    margin: 0px;
+}
+.content {
+    padding-top: 50px;
 }
 .label-names {
     text-align: right;
@@ -17,7 +21,7 @@
 .Signup {
     width: 200px;
     height: 40px;
-    background-color: #00C097;
+    background-color: #43707B;
     color: white;
     font-weight: bold;
     margin-left: 90px;
@@ -27,7 +31,7 @@
     .Signup {
         width: 200px;
         height: 40px;
-        background-color: #00C097;
+        background-color: #43707B;
         color: white;
         font-weight: bold;
         margin-left: 60px;
@@ -35,12 +39,12 @@
     }
 }
 .Signup:hover {
-    background-color: #009966;
+    background-color: #333366;
     color: white;
     font-weight: bold;
 }
 .Signup:focus {
-    background-color: #009966;
+    background-color: #333366;
     color: white;
     font-weight: bold;
 }
