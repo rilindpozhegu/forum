@@ -1,5 +1,7 @@
 body {
     background-color: #484848;
+    font-family: 'Open Sans';
+    font-size: 16px;
 }
 .navbar-collapse {
     padding-top: 7px;
@@ -11,7 +13,6 @@ body {
 }
 .logo-foum {
     height: 70px;
-
 }
 .navbar-form {
     margin-left: 10px;
@@ -171,14 +172,16 @@ body {
 /*
     Panel
 */
+
 .panel-heading {
     min-height: 70px;
+    border-bottom: none;
 }
-.right-notification-panel{
+.right-notification-panel {
     margin-top: -16px;
 }
-.post-number-panel{
-    border-left:1px dashed #ccc;
+.post-number-panel {
+    border-left: 1px dashed #ccc;
 }
 /*
     Social-NetWork's
@@ -208,8 +211,8 @@ body {
         text-align: center;
     }
 }
-
 /*slide-cover*/
+
 .slider {
     max-width: 100%;
     height: 400px;
@@ -290,4 +293,89 @@ body {
     100% {
         opacity: 0
     }
+}
+.footer {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.forum-rights {
+    margin-top: 8px;
+    color: white;
+    padding-left: 0px;
+}
+.social-network {
+    text-align: right;
+}
+.btn-reply {
+    background-color: white;
+    border: none;
+    margin-top: 7px;
+    color: #4f7080;
+    font-weight: bold;
+    outline: none;
+}
+.btn-reply:focus {
+    border: none;
+}
+.btn-reply:active {
+    border: none;
+}
+.slider-reply {
+    max-width: 100%;
+    height: 10px;
+    border: none;
+    box-shadow: none;
+}
+.input-text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #4f7080;
+    width: 600px;
+    outline: none;
+    padding-left: 3px;
+    background-color: #f5f5f5;
+    border-radius: 0px;
+}
+/*
+shigjeta ne reply
+*/
+
+.glyphicon-chevron-right {
+    font-size: 11px;
+    margin-left: 3px;
+}
+/*
+Modal-repy
+*/
+
+.modal-reply {
+    height: 500px;
+}
+.photo-user-modal {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 1px;
+}
+.username-modal {
+    font-weight: bold;
+    text-decoration: none;
+    color: #43707B;
+}
+.body-reply-modal {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.panel-comment {
+    border-radius: 0px;
+    border-bottom: solid 2px #43707B;
+    padding-left: 10px;
+}
+.post-time-modal {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 1px;
 }

@@ -4,19 +4,19 @@
 <head>
     <title>Home</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        
+
         <div class='slider'>
-          <div class='slide1 '></div>
-          <div class='slide2'></div>
-          <div class='slide3'></div>
-          </div>
+            <div class='slide1 '></div>
+            <div class='slide2'></div>
+            <div class='slide3'></div>
+        </div>
 
         <nav class="navbar navbar-default ">
             <div class="navbar-header">
@@ -26,7 +26,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="http://localhost/forum/src/main/resources/templates/"><img class="logo-foum" src="logo-forum.png"></a>
+                <a href="http://localhost/forum/src/main/resources/templates/"><img class="logo-foum" src="logo-forum.png">
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <form class="navbar-form navbar-left" role="search">
@@ -85,9 +86,6 @@
                 </div>
                 <h4><a href="#" class="profile-link">Rilind Pozhegu</a></h4>
                 <br />
-                <p class='right-notification-panel pull-right'>
-                    <a href='#post_196897' name='post_196897' id='post_196897'>#1</a><a href='#top'><i class='entypo up-dir'></i></a>
-                </p>
             </div>
             <div class='panel-body'>
                 <div class='row'>
@@ -100,12 +98,71 @@
                         <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
                         <br /> Wrong! can anyone please tell me how to do this?
                         <br />
-                        <br /> thanks
+                        <br /> <u>thanks</u>
                     </div>
                     <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <!--forum_thread_user_info-->
-                        <p><strong>Posts:</strong> 3</p>
-                        <p><strong>Joined:</strong> 15/01/2016</p>
+                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
+                        <div class="modal fade" id="notification-modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-reply">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Reply Comments:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-reply">
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="reply-button">
+                            <button type="button" class="btn-reply" data-toggle="dropdown">Reply comment
+                                <label for="text" class="glyphicon glyphicon-chevron-right" rel="tooltip" title="search"></label>
+                            </button>
+                            <ul class="dropdown-menu slider slider-reply">
+                                <li>
+                                    <input type="text" class="input-text" placeholder="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,9 +174,6 @@
                 </div>
                 <h4><a href="#" class="profile-link">Rilind Pozhegu</a></h4>
                 <br />
-                <p class='right-notification-panel pull-right'>
-                    <a href='#post_196897' name='post_196897' id='post_196897'>#1</a><a href='#top'><i class='entypo up-dir'></i></a>
-                </p>
             </div>
             <div class='panel-body'>
                 <div class='row'>
@@ -132,12 +186,59 @@
                         <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
                         <br /> Wrong! can anyone please tell me how to do this?
                         <br />
-                        <br /> thanks
+                        <br /> <u>thanks</u>
                     </div>
                     <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <!--forum_thread_user_info-->
-                        <p><strong>Posts:</strong> 3</p>
-                        <p><strong>Joined:</strong> 15/01/2016</p>
+                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
+                        <div class="modal fade" id="notification-modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-reply">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Comments:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-reply">
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="reply-button">
+                            <button type="button" class="btn-reply" data-toggle="dropdown">Reply comment
+                                <label for="text" class="glyphicon glyphicon-chevron-right" rel="tooltip" title="search"></label>
+                            </button>
+                            <ul class="dropdown-menu slider slider-reply">
+                                <li>
+                                    <input type="text" class="input-text" placeholder="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,9 +250,6 @@
                 </div>
                 <h4><a href="#" class="profile-link">Rilind Pozhegu</a></h4>
                 <br />
-                <p class='right-notification-panel pull-right'>
-                    <a href='#post_196897' name='post_196897' id='post_196897'>#1</a><a href='#top'><i class='entypo up-dir'></i></a>
-                </p>
             </div>
             <div class='panel-body'>
                 <div class='row'>
@@ -164,12 +262,59 @@
                         <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
                         <br /> Wrong! can anyone please tell me how to do this?
                         <br />
-                        <br /> thanks
+                        <br /> <u>thanks</u>
                     </div>
                     <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <!--forum_thread_user_info-->
-                        <p><strong>Posts:</strong> 3</p>
-                        <p><strong>Joined:</strong> 15/01/2016</p>
+                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
+                        <div class="modal fade" id="notification-modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-reply">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Comments:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-reply">
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="reply-button">
+                            <button type="button" class="btn-reply" data-toggle="dropdown">Reply comment
+                                <label for="text" class="glyphicon glyphicon-chevron-right" rel="tooltip" title="search"></label>
+                            </button>
+                            <ul class="dropdown-menu slider slider-reply">
+                                <li>
+                                    <input type="text" class="input-text" placeholder="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,9 +326,6 @@
                 </div>
                 <h4><a href="#" class="profile-link">Rilind Pozhegu</a></h4>
                 <br />
-                <p class='right-notification-panel pull-right'>
-                    <a href='#post_196897' name='post_196897' id='post_196897'>#1</a><a href='#top'><i class='entypo up-dir'></i></a>
-                </p>
             </div>
             <div class='panel-body'>
                 <div class='row'>
@@ -196,18 +338,67 @@
                         <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
                         <br /> Wrong! can anyone please tell me how to do this?
                         <br />
-                        <br /> thanks
+                        <br /> <u>thanks</u>
                     </div>
                     <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <!--forum_thread_user_info-->
-                        <p><strong>Posts:</strong> 3</p>
-                        <p><strong>Joined:</strong> 15/01/2016</p>
+                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
+                        <div class="modal fade" id="notification-modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-reply">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Comments:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-reply">
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="reply-button">
+
+                            <button type="button" class="btn-reply" data-toggle="dropdown">Reply comment
+                                <label for="text" class="glyphicon glyphicon-chevron-right" rel="tooltip" title="search"></label>
+                            </button>
+                            <ul class="dropdown-menu slider slider-reply">
+                                <li>
+                                    <input type="text" class="input-text" placeholder="">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="text-right center-block">
+            <div class="col-md-6 forum-rights">&copy; 2016 Forum All Rights Reserved.</div>
+            <div class="col-md-6 social-network">
                 <a href="#"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
                 <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
                 <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
@@ -216,6 +407,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        </div>
+    </div>
 </body>
+
 </html>
