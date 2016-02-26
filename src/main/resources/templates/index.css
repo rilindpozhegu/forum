@@ -3,6 +3,11 @@ body {
     font-family: 'Open Sans';
     font-size: 16px;
 }
+
+
+
+
+
 /*--------------------*\
       slide-cover
 \*--------------------*/
@@ -12,6 +17,7 @@ body {
     height: 400px;
     position: relative;
 }
+
 @media screen and (max-width: 450px) {
     .cover-photos-slider {
         max-width: 100%;
@@ -19,6 +25,7 @@ body {
         position: relative;
     }
 }
+
 .slide1-photo,
 .slide2-photo,
 .slide3-photo,
@@ -28,24 +35,28 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .slide1-photo {
-    background: url(coverphotoforum.jpg)no-repeat center;
+    background: url(cover-photo-1.jpg)no-repeat center;
     background-size: cover;
     animation: fade 8s infinite;
     -webkit-animation: fade 8s infinite;
 }
+
 .slide2-photo {
-    background: url(cover-photo-1.jpg)no-repeat center;
+    background: url(cover-photo-2.jpg)no-repeat center;
     background-size: cover;
     animation: fade2 8s infinite;
     -webkit-animation: fade2 8s infinite;
 }
+
 .slide3-photo {
-    background: url(cover-photo-2.jpg)no-repeat center;
+    background: url(cover-photo-3.jpg)no-repeat center;
     background-size: cover;
     animation: fade3 8s infinite;
     -webkit-animation: fade3 8s infinite;
 }
+
 @keyframes fade {
     0% {
         opacity: 1
@@ -60,6 +71,7 @@ body {
         opacity: 1
     }
 }
+
 @keyframes fade2 {
     0% {
         opacity: 0
@@ -74,6 +86,7 @@ body {
         opacity: 0
     }
 }
+
 @keyframes fade3 {
     0% {
         opacity: 0
@@ -88,6 +101,11 @@ body {
         opacity: 0
     }
 }
+
+
+
+
+
 /*------------------------------*\
   Logo e navigationbar-ti 'Forum'
 \*------------------------------*/
@@ -97,17 +115,25 @@ body {
     padding-right: 5px;
     margin-bottom: 10px;
 }
-.logo-foum {
+
+.logo-forum {
     height: 70px;
 }
+
 .navbar-form {
     margin-left: 10px;
 }
+
 @media screen and (max-width: 450px) {
     .navbar-form {
         margin-left: 0px;
     }
 }
+
+
+
+
+
 /*-------------------------------------------*\
  search form, ku perfshihet edhe 'search-icon'
 \*-------------------------------------------*/
@@ -118,6 +144,7 @@ body {
     display: block;
     padding-left: 15px;
 }
+
 @media screen and (max-width: 450px) {
     .search-icon {
         position: relative;
@@ -126,9 +153,11 @@ body {
         padding-left: 0px;
     }
 }
+
 .search-icon:after {
     clear: both;
 }
+
 .search-icon.addon-md .glyphicon,
 .search-icon .glyphicon,
 .search-icon.addon-md .fa,
@@ -143,6 +172,7 @@ body {
     padding: 10px 0;
     top: 1px
 }
+
 .search-icon.addon-lg .form-control {
     line-height: 1.33;
     height: 40px;
@@ -150,6 +180,7 @@ body {
     padding: 10px 16px 10px 40px;
     width: 450px;
 }
+
 @media screen and (max-width: 450px) {
     .search-icon.addon-lg .form-control {
         height: 40px;
@@ -157,6 +188,7 @@ body {
         width: 300px;
     }
 }
+
 .search-icon.addon-lg .fa,
 .search-icon.addon-lg .glyphicon {
     font-size: 18px;
@@ -164,6 +196,7 @@ body {
     left: 25px;
     top: 2px;
 }
+
 @media screen and (max-width: 450px) {
     .search-icon.addon-lg .fa,
     .search-icon.addon-lg .glyphicon {
@@ -173,11 +206,16 @@ body {
         top: 2px;
     }
 }
+
+
+
+
+
 /*------------------------------------------------------*\
   Butoni shto ku ne te cilin ne mund te shtojme Topic's
 \*------------------------------------------------------*/
 
-.Shto-button {
+.shto-button {
     width: 300px;
     height: 40px;
     background-color: #43707B;
@@ -186,18 +224,21 @@ body {
     margin-left: 100px;
     margin-top: 0px;
 }
-.Shto-button:hover {
+
+.shto-button:hover {
     background-color: #333366;
     color: white;
     font-weight: bold;
 }
-.Shto-button:focus {
+
+.shto-button:focus {
     background-color: #333366;
     color: white;
     font-weight: bold;
 }
+
 @media screen and (max-width: 450px) {
-    .Shto-button {
+    .shto-button {
         width: 300px;
         background-color: #43707B;
         color: white;
@@ -206,6 +247,11 @@ body {
         margin-top: 5px;
     }
 }
+
+
+
+
+
 /*-----------------------------*\
   Inside The new topic 'Module
 \*-----------------------------*/
@@ -214,21 +260,29 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
 .input-inside-modal {
     width: 100%;
     border: solid 1px #43707B;
     border-radius: 3px;
     padding-left: 10px;
 }
+
 .modal-butons {
     background-color: white;
     border: solid 1px black;
 }
+
 .modal-butons:hover {
     background-color: white;
     border: solid 1px #333366;
     color: #43707B;
 }
+
+
+
+
+
 /*-----------------------------------*\
   Navigation UserPhoto/logout/signup
 \*-----------------------------------*/
@@ -238,15 +292,22 @@ body {
     height: 40px;
     border-radius: 100%;
 }
+
 .navbar-user-photo > li > a {
     padding-top: 5px;
     padding-bottom: 15px;
 }
+
 .photo-user {
     width: 40px;
     height: 40px;
     border-radius: 100%;
 }
+
+
+
+
+
 /*-------------------------*\
            Panel
 \*-------------------------*/
@@ -257,6 +318,7 @@ body {
     text-decoration: none;
     color: #43707B;
 }
+
 .profile-link-panel:hover {
     font-weight: bold;
     padding-left: 10px;
@@ -266,26 +328,37 @@ body {
 .post-time {
     color: #A0A0A0;
 }
+
 .title-of-panel {
     font-weight: bold;
 }
+
 .panel-heading {
     min-height: 70px;
     border-bottom: none;
 }
+
 .right-notification-panel {
     margin-top: -16px;
 }
+
 .post-number-panel {
     border-left: 1px dashed #ccc;
 }
+
+
+
+
+
 /*--------------------------------------------*\
     Modal-repy (inside Notification's popup)
 \*--------------------------------------------*/
 
 .modal-reply {
     height: 500px;
+    overflow: auto;
 }
+
 .photo-user-modal {
     width: 40px;
     height: 40px;
@@ -294,25 +367,34 @@ body {
     margin-left: 10px;
     padding-right: 1px;
 }
+
 .username-modal {
     font-weight: bold;
     text-decoration: none;
     color: #43707B;
 }
+
 .body-reply-modal {
     margin-bottom: 20px;
     font-size: 13px;
 }
+
 .panel-comment {
     border-radius: 0px;
     border-bottom: solid 2px #43707B;
     padding-left: 10px;
 }
+
 .post-time-modal {
     font-size: 10px;
     text-align: right;
     margin-bottom: 1px;
 }
+
+
+
+
+
 /*-----------------------*\
   Reply-btn inside Panel
 \*-----------------------*/
@@ -325,29 +407,19 @@ body {
     font-weight: bold;
     outline: none;
 }
+
 .btn-reply:focus {
     border: none;
 }
+
 .btn-reply:active {
     border: none;
 }
-.slider-reply {
-    max-width: 100%;
-    height: 10px;
-    border: none;
-    box-shadow: none;
-}
-.input-text {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid 1px #4f7080;
-    width: 600px;
-    outline: none;
-    padding-left: 3px;
-    background-color: #f5f5f5;
-    border-radius: 0px;
-}
+
+
+
+
+
 /*---------------------------*\
    Shigjeta ne butonin reply
 \*---------------------------*/
@@ -356,6 +428,11 @@ body {
     font-size: 11px;
     margin-left: 3px;
 }
+
+
+
+
+
 /*---------------------*\
     Social-NetWork's
 \*---------------------*/
@@ -363,27 +440,23 @@ body {
 #social-fb:hover {
     color: #3B5998;
 }
+
 #social-tw:hover {
     color: #4099FF;
 }
+
 #social-gp:hover {
     color: #d34836;
 }
+
 #social-em:hover {
     color: #f39c12;
 }
-.center-block {
-    display: block;
-    margin-right: 10px;
-    margin-left: auto;
-}
-@media screen and (max-width: 450px) {
-    .center-block {
-        display: block;
-        margin-right: auto;
-        text-align: center;
-    }
-}
+
+
+
+
+
 /*-----------------------------*\
   Footer/rights/socialnetworks
 \*-----------------------------*/
@@ -392,14 +465,17 @@ body {
     margin-top: 0px;
     margin-bottom: 20px;
 }
+
 .forum-rights-footer {
     margin-top: 8px;
     color: white;
     padding-left: 0px;
 }
+
 .social-network-footer {
     text-align: right;
 }
+
 .btn-reply {
     background-color: white;
     border: none;
@@ -408,18 +484,22 @@ body {
     font-weight: bold;
     outline: none;
 }
+
 .btn-reply:focus {
     border: none;
 }
+
 .btn-reply:active {
     border: none;
 }
+
 .slider-reply {
     max-width: 100%;
     height: 10px;
     border: none;
     box-shadow: none;
 }
+
 .input-text {
     border-top: none;
     border-left: none;
@@ -431,6 +511,11 @@ body {
     background-color: #f5f5f5;
     border-radius: 0px;
 }
+
+
+
+
+
 /*--------------------------------------------*\
     Modal-repy (inside Notification's popup)
 \*--------------------------------------------*/
@@ -438,6 +523,7 @@ body {
 .modal-reply {
     height: 500px;
 }
+
 .photo-user-modal {
     width: 40px;
     height: 40px;
@@ -446,20 +532,24 @@ body {
     margin-left: 10px;
     padding-right: 1px;
 }
+
 .username-modal {
     font-weight: bold;
     text-decoration: none;
     color: #43707B;
 }
+
 .body-reply-modal {
     margin-bottom: 20px;
     font-size: 13px;
 }
+
 .panel-comment {
     border-radius: 0px;
     border-bottom: solid 2px #43707B;
     padding-left: 10px;
 }
+
 .post-time-modal {
     font-size: 10px;
     text-align: right;
