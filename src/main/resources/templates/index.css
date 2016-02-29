@@ -112,12 +112,12 @@ body {
 
 .logo-navbar {
     padding-left: 18px;
-    padding-right: 5px;
+    padding-right: 0px;
     margin-bottom: 10px;
 }
 
 .logo-forum {
-    height: 70px;
+    height: 60px;
 }
 
 .navbar-form {
@@ -304,6 +304,10 @@ body {
     border-radius: 100%;
 }
 
+.profile-dropdown:hover {
+    background-color: red;
+}
+
 
 
 
@@ -391,66 +395,91 @@ body {
     margin-bottom: 1px;
 }
 
+.input-reply-text {
+    background-color: #4f7080;
+    color: white;
+}
+
 
 
 
 
 /*-----------------------*\
-  Reply-btn inside Panel
+  Reply-input inside Panel
 \*-----------------------*/
 
-.btn-reply {
+.btn-reply-footer {
+    background-color: #4f7080;
+    border: none;
+    width: 100px;
+    border:solid 1px #4f7080;
+    border-radius: 4px;    
+}
+.reply-footer{
+    margin-top: 10px;
+    text-align: right;
+}
+.drop-down-reply {
     background-color: white;
-    border: none;
-    margin-top: 7px;
-    color: #4f7080;
-    font-weight: bold;
+    margin-top: 10px;
+}
+
+.insert-reply-comment{
+    width: 100%;
+    padding-left: 10px;
     outline: none;
+    border-radius: 4px;
+    border: solid 1px #4f7080;
+    background-color: #f5f5f5
 }
 
-.btn-reply:focus {
-    border: none;
-}
-
-.btn-reply:active {
-    border: none;
-}
-
-
-
-
-
-/*---------------------------*\
-   Shigjeta ne butonin reply
-\*---------------------------*/
-
-.glyphicon-chevron-right {
-    font-size: 11px;
-    margin-left: 3px;
+.insert-reply-comment:focus{
+    background-color: white;
 }
 
 
 
 
 
-/*---------------------*\
-    Social-NetWork's
-\*---------------------*/
 
-#social-fb:hover {
-    color: #3B5998;
+/*--------------------------------------------*\
+    Modal-repy (inside Notification's popup)
+\*--------------------------------------------*/
+
+.modal-reply {
+    height: 500px;
 }
 
-#social-tw:hover {
-    color: #4099FF;
+.photo-user-modal {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 1px;
 }
 
-#social-gp:hover {
-    color: #d34836;
+.username-modal {
+    font-weight: bold;
+    text-decoration: none;
+    color: #43707B;
 }
 
-#social-em:hover {
-    color: #f39c12;
+.body-reply-modal {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.panel-comment {
+    border-radius: 0px;
+    border-bottom: solid 2px #43707B;
+    padding-left: 10px;
+}
+
+.post-time-modal {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 1px;
 }
 
 
@@ -516,42 +545,22 @@ body {
 
 
 
-/*--------------------------------------------*\
-    Modal-repy (inside Notification's popup)
-\*--------------------------------------------*/
+/*---------------------*\
+    Social-NetWork's
+\*---------------------*/
 
-.modal-reply {
-    height: 500px;
+#social-fb:hover {
+    color: #3B5998;
 }
 
-.photo-user-modal {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-right: 1px;
+#social-tw:hover {
+    color: #4099FF;
 }
 
-.username-modal {
-    font-weight: bold;
-    text-decoration: none;
-    color: #43707B;
+#social-gp:hover {
+    color: #d34836;
 }
 
-.body-reply-modal {
-    margin-bottom: 20px;
-    font-size: 13px;
-}
-
-.panel-comment {
-    border-radius: 0px;
-    border-bottom: solid 2px #43707B;
-    padding-left: 10px;
-}
-
-.post-time-modal {
-    font-size: 10px;
-    text-align: right;
-    margin-bottom: 1px;
+#social-em:hover {
+    color: #f39c12;
 }

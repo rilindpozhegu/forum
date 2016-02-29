@@ -5,6 +5,20 @@ body {
     font-family: arial;
     background-color: #f5f5f5;
 }
+
+
+
+
+
+/*-------------------*\
+    Navigation bar
+\*-------------------*/
+
+.navbar {
+    background-color: #484848;
+    height: 70px;
+}
+
 .nav-logo img {
     width: 100px;
     height: 70px;
@@ -12,28 +26,42 @@ body {
     padding-top: 10px;
     padding-left: 10px;
 }
+
+
+
+
+
+/*--------------------*\
+       Login form
+\*--------------------*/
+
 .login-photo {
     width: 120px;
     height: 120px;
     border-radius: 100%;
     margin-top: 20px;
 }
+
 .login-form {
     color: #919191;
     padding: 10px 20px;
 }
+
 .login-form p {
     margin-bottom: 5px;
 }
+
 .login-form-1 {
     width: 340px;
     border-radius: 5px;
     display: inline-block;
 }
+
 .main-login-form {
     position: relative;
     margin-top: 30px;
 }
+
 .login-form-1 .form-control {
     border: 0;
     box-shadow: 0 0 0;
@@ -44,14 +72,8 @@ body {
     font-weight: bold;
     height: auto;
 }
-.login-form-1 .form-control::-webkit-input-placeholder {
-    color: #999999;
-}
-.login-form-1 .form-control:-moz-placeholder,
-.login-form-1 .form-control::-moz-placeholder,
-.login-form-1 .form-control:-ms-input-placeholder {
-    color: #999999;
-}
+
+
 .login-form-1 .form-group {
     margin-bottom: 0;
     border-bottom: 2px solid #efefef;
@@ -59,18 +81,32 @@ body {
     padding-top: 9px;
     position: relative;
 }
+
 .login-form-1 .form-group:last-child {
     border-bottom: 0;
 }
+
 .login-group {
     background: #ffffff;
     color: #999999;
     border-radius: 8px;
     padding: 10px 20px;
 }
+
 .login-group-checkbox {
     padding: 5px 0;
 }
+
+.login-form-personal {
+
+}
+
+
+
+/*-----------------------*\
+    Login fomrm (panel)
+\*-----------------------*/
+
 .login-form-1 .login-button {
     position: absolute;
     right: -25px;
@@ -85,75 +121,27 @@ body {
     border-radius: 50%;
     transition: all ease-in-out 500ms;
 }
-.login-form-1 .login-button:hover {
-    color: #555555;
-    transform: rotate(450deg);
-}
-.login-form-1 .login-button.clicked {
-    color: #555555;
-}
-.login-form-1 .login-button.clicked:hover {
-    transform: none;
-}
-.login-form-1 .login-button.clicked.success {
-    color: #2ecc71;
-}
-.login-form-1 .login-button.clicked.error {
-    color: #e74c3c;
-}
-.footer li {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 40px;
-    position: relative;
-    list-style: none;
-}
-.row-footer {
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-.footer i {
-    text-align: center;
-    padding-top: 0px;
-    color: black;
-    padding-bottom: 0px;
-    font-size: 40px;
-    position: relative;
-}
-.footer i:hover {
-    text-align: center;
-    color: red;
-    padding: 0 auto;
-    font-size: 40px;
-    position: relative;
-    transition: color 0.2s ease;
-}
-.navbar {
-    background-color: #484848;
-    height: 70px;
-}
-/*
-    Social-Network
-*/
 
-.social {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-}
+
+
+
+/*-----------------------*\
+    Social-Network-icons
+\*-----------------------*/
+
+
 #social-fb:hover {
     color: #3B5998;
 }
+
 #social-tw:hover {
     color: #4099FF;
 }
+
 #social-gp:hover {
     color: #d34836;
 }
+
 #social-em:hover {
     color: #f39c12;
 }
