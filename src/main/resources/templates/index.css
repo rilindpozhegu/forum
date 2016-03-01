@@ -116,6 +116,10 @@ body {
     margin-bottom: 10px;
 }
 
+.navbar-default {
+    border-radius: 0px;
+}
+
 .logo-forum {
     height: 60px;
 }
@@ -185,7 +189,7 @@ body {
     .search-icon.addon-lg .form-control {
         height: 40px;
         font-size: 18px;
-        width: 300px;
+        width: 220px;
     }
 }
 
@@ -239,7 +243,7 @@ body {
 
 @media screen and (max-width: 450px) {
     .shto-button {
-        width: 300px;
+        width: 220px;
         background-color: #43707B;
         color: white;
         font-weight: bold;
@@ -304,10 +308,6 @@ body {
     border-radius: 100%;
 }
 
-.profile-dropdown:hover {
-    background-color: red;
-}
-
 
 
 
@@ -363,6 +363,21 @@ body {
     overflow: auto;
 }
 
+.post-number-panel {
+    text-align: center;
+    border-bottom: dashed 1px black; 
+    padding-bottom: 5px;
+    border-left: none;
+}
+
+.notification-text-icon {
+    color: 
+}
+
+.notification-text-icon:hover {
+    text-decoration: none;
+}
+
 .photo-user-modal {
     width: 40px;
     height: 40px;
@@ -404,9 +419,9 @@ body {
 
 
 
-/*-----------------------*\
-  Reply-input inside Panel
-\*-----------------------*/
+/*--------------------------*\
+   Reply-input inside Panel
+\*--------------------------*/
 
 .btn-reply-footer {
     background-color: #4f7080;
@@ -415,9 +430,16 @@ body {
     border:solid 1px #4f7080;
     border-radius: 4px;    
 }
-.reply-footer{
+.reply-footer {
     margin-top: 10px;
     text-align: right;
+}
+
+@media screen and (max-width: 450px) {
+ .reply-footer {
+    margin-top: 30px;
+    text-align: center;
+    }
 }
 .drop-down-reply {
     background-color: white;

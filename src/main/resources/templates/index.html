@@ -6,8 +6,9 @@
     <!-- bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
     <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
@@ -71,18 +72,17 @@
                     </div>
                 </form>
                 <ul class="nav navbar-user-photo navbar-right">
-                    <li class="dropdown profile-dropdown">
+                    <li class="dropdown  profile-dropdown">
                         <a href="#" class="dropdown-toggle img-dropdown" data-toggle="dropdown" role="button"><img class="photo-logout" src="skenderbeu.jpg"> <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Profile</a>
+                            <li><a href="profile.html">Profile</a>
                             </li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Logout</a>
+                            <li><a href="login.html">Logout</a>
                             </li>
                             <li><a href="login.html">Login.html</a>
                             </li>
-                            <li><a href="http://localhost/forum/src/main/resources/templates/signup.html">Signup</a>
+                            <li><a href="signup.html">Signup</a>
                             </li>
                         </ul>
                     </li>
@@ -91,7 +91,7 @@
         </nav>
 
         <!-- Pjesa e panelit -->
-        <div class="panel panel-default">
+        <div class="panel  panel-default">
             <div class='panel-heading'>
                 <!-- Hederi i panelit -->
                 <div class='pull-left'>
@@ -104,7 +104,7 @@
             <!-- Pjesa Trupit te panelit -->
             <div class='panel-body'>
                 <div class='row'>
-                    <div class='col-xs-12 col-sm-10 col-md-10 col-lg-10'>
+                    <div class='col-md-10'>
                         <div class="post-time">
                             <p><small>Posted <abbr class='atooltip' data-toggle='tooltip' data-placement='top'>2 min. ago</abbr></small>
                             </p>
@@ -117,8 +117,8 @@
                     </div>
 
                     <!--Butoni 'Notification' -->
-                    <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
+                    <div class='post-number-panel  col-md-2'>
+                        <a href="#" data-toggle="modal" data-target="#notification-modal" class="notification-text-icon">1+ <i class="fa fa-comments"></i></a>
                         <div class="modal fade" id="notification-modal" role="dialog">
                             <div class="modal-dialog">
                                 <div class="modal-content modal-reply">
@@ -134,13 +134,98 @@
                                                     <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
                                                 </div>
                                                 <div class="col-md-10">
-                                                    <div class="panel panel-comment">
+                                                    <div class="panel  panel-comment">
                                                         <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
                                                         <p class="body-reply-modal">Today is a good day to training</p>
                                                         <p class="post-time-modal">time: 10 min.ago</p>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel  panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-comment1">
+                                                <div class="col-md-2">
+                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="panel  panel-comment">
+                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
+                                                        <p class="body-reply-modal">Today is a good day to training</p>
+                                                        <p class="post-time-modal">time: 10 min.ago</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Butoni ku mund te shtojme nje koment per qdo panel te caktuar -->
+                    <div class="col-md-12  reply-footer">
+                        <button class="btn-reply-footer btn-primary" type="button" data-toggle="collapse" data-target="#Open-collapse1" aria-expanded="false" aria-controls="collapseExample">
+                        Reply
+                        </button>
+                        <div class="collapse" id="Open-collapse1">
+                            <div class="drop-down-reply">
+                                <input class="insert-reply-comment" placeholder="Share your comments with us!"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Pjesa e panelit -->
+        <div class="panel  panel-default">
+            <div class='panel-heading'>
+                <!-- Hederi i panelit -->
+                <div class='pull-left'>
+                    <a href="#"><img class="img-responsive  img-rounded photo-user" src="skenderbeu.jpg" /></a>
+                </div>
+                <h4><a href="#" class="profile-link-panel">Rilind Pozhegu</a></h4>
+                <br />
+            </div>
+
+            <!-- Pjesa Trupit te panelit -->
+            <div class='panel-body'>
+                <div class='row'>
+                    <div class='col-md-10'>
+                        <div class="post-time">
+                            <p><small>Posted <abbr class='atooltip' data-toggle='tooltip' data-placement='top'>2 min. ago</abbr></small>
+                            </p>
+                        </div>
+                        <div class="title-of-panel">Hi</div>
+                        <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
+                        <br /> Wrong! can anyone please tell me how to do this?
+                        <br />
+                        <br /> thanks
+                    </div>
+
+                    <!--Butoni 'Notification' -->
+                    <div class='post-number-panel col-md-2'>
+                        <a href="#" data-toggle="modal" data-target="#notification-modal" class="notification-text-icon">1+ <i class="fa fa-comments"></i></a>
+                        <div class="modal fade" id="notification-modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content modal-reply">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Reply Comments:</h4>
+                                    </div>
+
+                                    <!-- popup i cili i bashkangjitet butonit te 'Notification' -->
+                                    <div class="modal-body">
+                                        <div class="modal-reply">
                                             <div class="modal-comment1">
                                                 <div class="col-md-2">
                                                     <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
@@ -186,103 +271,6 @@
 
                     <!-- Butoni ku mund te shtojme nje koment per qdo panel te caktuar -->
                     <div class="col-md-12 reply-footer">
-                        <button class="btn-reply-footer btn-primary" type="button" data-toggle="collapse" data-target="#Open-collapse1" aria-expanded="false" aria-controls="collapseExample">
-                        Reply
-                        </button>
-                        <div class="collapse" id="Open-collapse1">
-                            <div class="drop-down-reply">
-                                <input class="insert-reply-comment" placeholder="Share your comments with us!"> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Pjesa e panelit -->
-        <div class="panel panel-default">
-            <div class='panel-heading'>
-                <!-- Hederi i panelit -->
-                <div class='pull-left'>
-                    <a href="#"><img class="img-responsive img-rounded photo-user" src="skenderbeu.jpg"> </a>
-                </div>
-                <h4><a href="#" class="profile-link-panel">Rilind Pozhegu</a></h4>
-                <br />
-            </div>
-
-            <!-- Pjesa Trupit te panelit -->
-            <div class='panel-body'>
-                <div class='row'>
-                    <div class='col-xs-12 col-sm-10 col-md-10 col-lg-10'>
-                        <div class="post-time">
-                            <p><small>Posted <abbr class='atooltip' data-toggle='tooltip' data-placement='top'>2 min. ago</abbr></small>
-                            </p>
-                        </div>
-                        <div class="title-of-panel">Hi</div>
-                        <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
-                        <br /> Wrong! can anyone please tell me how to do this?
-                        <br />
-                        <br /> thanks
-                    </div>
-
-                    <!--Butoni 'Notification' -->
-                    <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
-                        <div class="modal fade" id="notification-modal" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content modal-reply">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Reply Comments:</h4>
-                                    </div>
-                                    <!-- popup i cili i bashkangjitet butonit te 'Notification' -->
-                                    <div class="modal-body">
-                                        <div class="modal-reply">
-                                            <div class="modal-comment1">
-                                                <div class="col-md-2">
-                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="panel panel-comment">
-                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
-                                                        <p class="body-reply-modal">Today is a good day to training</p>
-                                                        <p class="post-time-modal">time: 10 min.ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-comment1">
-                                                <div class="col-md-2">
-                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="panel panel-comment">
-                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
-                                                        <p class="body-reply-modal">Today is a good day to training</p>
-                                                        <p class="post-time-modal">time: 10 min.ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-comment1">
-                                                <div class="col-md-2">
-                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="panel panel-comment">
-                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
-                                                        <p class="body-reply-modal">Today is a good day to training</p>
-                                                        <p class="post-time-modal">time: 10 min.ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Butoni ku mund te shkruajme nje koment per qdo panel te caktuar -->
-                     <div class="col-md-12 reply-footer">
                         <button class="btn-reply-footer btn-primary" type="button" data-toggle="collapse" data-target="#Open-collapse2" aria-expanded="false" aria-controls="collapseExample">
                         Reply
                         </button>
@@ -295,113 +283,16 @@
                 </div>
             </div>
         </div>
-
-        <!-- Pjesa e panelit -->
-        <div class="panel panel-default">
-            <div class='panel-heading'>
-                <!-- Hederi i panelit -->
-                <div class='pull-left'>
-                    <a href="#"><img class="img-responsive img-rounded photo-user" src="skenderbeu.jpg"> </a>
-                </div>
-                <h4><a href="#" class="profile-link-panel">Rilind Pozhegu</a></h4>
-                <br />
-            </div>
-
-            <!-- Pjesa Trupit te panelit -->
-            <div class='panel-body'>
-                <div class='row'>
-                    <div class='col-xs-12 col-sm-10 col-md-10 col-lg-10'>
-                        <div class="post-time">
-                            <p><small>Posted <abbr class='atooltip' data-toggle='tooltip' data-placement='top'>2 min. ago</abbr></small>
-                            </p>
-                        </div>
-                        <div class="title-of-panel">Hi</div>
-                        <br /> I would like to be able to display Accu-weather, or maybe Add Words in panels on my site. I was thinking this would just be a case of pasting the HTML in to a new custom panel..
-                        <br /> Wrong! can anyone please tell me how to do this?
-                        <br />
-                        <br /> thanks
-                    </div>
-
-                    <!--Butoni 'Notification' -->
-                    <div class='post-number-panel col-xs-9 col-sm-2 col-md-2 col-lg-2'>
-                        <a href="#" data-toggle="modal" data-target="#notification-modal">Notifications: 1+</a>
-                        <div class="modal fade" id="notification-modal" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content modal-reply">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Reply Comments:</h4>
-                                    </div>
-
-                                    <!-- popup i cili i bashkangjitet butonit te 'Notification' -->
-                                    <div class="modal-body">
-                                        <div class="modal-reply">
-                                            <div class="modal-comment1">
-                                                <div class="col-md-2">
-                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="panel panel-comment">
-                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
-                                                        <p class="body-reply-modal">Today is a good day to training</p>
-                                                        <p class="post-time-modal">time: 10 min.ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-comment1">
-                                                <div class="col-md-2">
-                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="panel panel-comment">
-                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
-                                                        <p class="body-reply-modal">Today is a good day to training</p>
-                                                        <p class="post-time-modal">time: 10 min.ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="modal-comment1">
-                                                <div class="col-md-2">
-                                                    <a href="#"><img class="img-responsive img-rounded photo-user photo-user-modal" src="skenderbeu.jpg"> </a>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <div class="panel panel-comment">
-                                                        <h4><a href="#" class="username-modal">Rilind Pozhegu</a></h4>
-                                                        <p class="body-reply-modal">Today is a good day to training</p>
-                                                        <p class="post-time-modal">time: 10 min.ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Butoni ku mund te shkruajme nje koment per qdo panel te caktuar -->
-                     <div class="col-md-12 reply-footer">
-                        <button class="btn-reply-footer btn-primary" type="button" data-toggle="collapse" data-target="#Open-collapse3" aria-expanded="false" aria-controls="collapseExample">
-                        Reply
-                        </button>
-                        <div class="collapse" id="Open-collapse3">
-                            <div class="drop-down-reply">
-                                <input class="insert-reply-comment" placeholder="Share your comments with us!"> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      
 
     <!-- Pjesa e Footer -->
     <div class="container">
         <div class="col-md-6 forum-rights-footer"><i class="fa fa-copyright"></i> 2016 Forum All Rights Reserved.</div>
         <div class="col-md-6 social-network-footer">
-            <a href="#"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-            <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-            <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-            <a href="#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+            <a href="#"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+            <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+            <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+            <a href="#"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
