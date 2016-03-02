@@ -441,12 +441,14 @@ body {
     text-align: center;
     }
 }
+
 .drop-down-reply {
     background-color: white;
     margin-top: 10px;
 }
 
 .insert-reply-comment{
+    resize: vertical;
     width: 100%;
     padding-left: 10px;
     outline: none;
