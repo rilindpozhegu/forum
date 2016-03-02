@@ -46,6 +46,27 @@ body {
 
 
 
+/*-------------------------*\
+		Upload-button
+\*-------------------------*/		
+
+.upload-picture {
+	margin-top: 10px;
+	border: solid 1px #f5f5f5;
+}
+
+.upload-picture:hover {
+	color: #4f7080;
+	border:solid 1px #4f7080;
+	background-color: white;
+}
+
+.upload-picture:focus {
+	outline: none;
+}
+
+
+
 
 
 /*-----------------------*\
@@ -68,35 +89,110 @@ body {
 
 
 
+
+/*------------------------*\
+		Update body- 
+\*------------------------*/
+
+.update {
+	margin-top: 20px;
+}
+
+
+
+
+
 /*---------------------------*\
 	Update personal Details
 \*---------------------------*/
 
-.update-body {
-	margin-top: 20px;
+.update-details {
+	margin-top: 30px;
 }
 
-.update-details input{
+@media screen and (max-width: 450px) {
+    .update-details{
+		margin-top: 70px;
+		text-align: center;
+	}
+}
+
+.update-details .form-control{
 	width: 90%;
 }
 
 @media screen and (max-width: 450px) {
-    .update-details input{
+    .update-details .form-control{
 		width: 100%;
+		margin-top: 10px;
 	}
 }
+
+
+
 
 
 /*---------------------------*\
 	  Update old password
 \*---------------------------*/
 
-.update-password input{
+.update-password {
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .update-password{
+		margin-top: 70px;
+		text-align: center;
+	}
+}
+
+.update-password .form-control{
 	width: 90%;
 }
 
 @media screen and (max-width: 450px) {
-    .update-password input{
+    .update-password .form-control{
 		width: 100%;
+		margin-top: 10px;
 	}
 }
+
+
+
+
+
+/*----------------------*\
+	  Social Network
+\*----------------------*/
+.social-network {
+	text-align: right;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .social-network {
+		text-align: center;
+		margin-top: 30px;
+	}
+}
+
+
+#social-fb:hover {
+    color: #3B5998;
+}
+
+#social-tw:hover {
+    color: #4099FF;
+}
+
+#social-gp:hover {
+    color: #d34836;
+}
+
+#social-em:hover {
+    color: #f39c12;
+}
+
+
+
