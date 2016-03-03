@@ -46,21 +46,26 @@ body {
 
 
 
+
 /*-------------------------*\
 		Upload-button
 \*-------------------------*/		
 
 .upload-picture {
 	margin-top: 10px;
-	border: solid 2px #f5f5f5;
+	border-bottom: solid 2px #4f7080;
+	border-top: solid 2px #f5f5f5;
+	border-right: solid 2px #f5f5f5;
+	border-left: solid 2px #f5f5f5;
 	width: 100px;
 	height: 30px;
+	background-color: #f5f5f5;
+	font-weight: bold;
 }
 
 .upload-picture:hover {
 	color: #4f7080;
 	border:solid 2px #4f7080;
-	background-color: white;
 }
 
 .upload-picture:focus {

@@ -12,14 +12,14 @@ body {
       slide-cover
 \*--------------------*/
 
-.cover-photos-slider {
+.cover__photos-slider {
     max-width: 100%;
     height: 400px;
     position: relative;
 }
 
 @media screen and (max-width: 450px) {
-    .cover-photos-slider {
+    .cover__photos-slider {
         max-width: 100%;
         height: 150px;
         position: relative;
@@ -106,9 +106,20 @@ body {
 
 
 
-/*------------------------------*\
-  Logo e navigationbar-ti 'Forum'
-\*------------------------------*/
+/*---------------------------------------------*\
+    Forum Navigation-bar (Logo, Search'from,
+     New topic-Btn (module), 
+     Profile-picture (dropdown) )
+\*---------------------------------------------*/
+
+.forum-navbar {
+    border-radius: 0px;
+}
+
+
+/*
+ *  Logo e navigationbar-ti 'Forum'
+ */
 
 .logo-navbar {
     padding-left: 18px;
@@ -116,31 +127,14 @@ body {
     margin-bottom: 10px;
 }
 
-.navbar-default {
-    border-radius: 0px;
-}
-
 .logo-forum {
     height: 60px;
 }
 
-.navbar-form {
-    margin-left: 10px;
-}
 
-@media screen and (max-width: 450px) {
-    .navbar-form {
-        margin-left: 0px;
-    }
-}
-
-
-
-
-
-/*-------------------------------------------*\
- search form, ku perfshihet edhe 'search-icon'
-\*-------------------------------------------*/
+/*
+ * search form, ku perfshihet edhe 'search-icon' 
+ */
 
 .search-icon {
     position: relative;
@@ -158,9 +152,7 @@ body {
     }
 }
 
-.search-icon:after {
-    clear: both;
-}
+
 
 .search-icon.addon-md .glyphicon,
 .search-icon .glyphicon,
@@ -212,14 +204,11 @@ body {
 }
 
 
+/*
+ * Butoni shto ku ne te cilin ne mund te shtojme Topic's
+ */
 
-
-
-/*------------------------------------------------------*\
-  Butoni shto ku ne te cilin ne mund te shtojme Topic's
-\*------------------------------------------------------*/
-
-.shto-button {
+.navnar__new-topic-btn {
     width: 300px;
     height: 40px;
     background-color: #43707B;
@@ -229,20 +218,20 @@ body {
     margin-top: 0px;
 }
 
-.shto-button:hover {
-    background-color: #333366;
+.navnar__new-topic-btn:hover {
+    background-color: #4f7080;
     color: white;
     font-weight: bold;
 }
 
-.shto-button:focus {
+.navnar__new-topic-btn:focus {
     background-color: #333366;
     color: white;
     font-weight: bold;
 }
 
 @media screen and (max-width: 450px) {
-    .shto-button {
+    .navnar__new-topic-btn {
         width: 220px;
         background-color: #43707B;
         color: white;
@@ -256,28 +245,36 @@ body {
 
 
 
-/*-----------------------------*\
-  Inside The new topic 'Module
-\*-----------------------------*/
+/*
+ * Inside The new topic 'Module
+ */
 
-.modal-title {
+.modal__header-title {
     text-align: center;
     font-weight: bold;
 }
 
-.input-inside-modal {
+.modal__body-input {
     width: 100%;
     border: solid 1px #43707B;
     border-radius: 3px;
     padding-left: 10px;
 }
 
-.modal-butons {
+.modal__body-textarea {
+    resize: vertical;
+    width: 100%;
+    border: solid 1px #43707B;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.modal__footer-button {
     background-color: white;
     border: solid 1px black;
 }
 
-.modal-butons:hover {
+.modal__footer-button:hover {
     background-color: white;
     border: solid 1px #333366;
     color: #43707B;
@@ -287,22 +284,11 @@ body {
 
 
 
-/*-----------------------------------*\
-  Navigation UserPhoto/logout/signup
-\*-----------------------------------*/
+/*
+ *   Navigation-bar UserPhoto/logout/signup
+ */
 
-.photo-logout {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-}
-
-.navbar-user-photo > li > a {
-    padding-top: 5px;
-    padding-bottom: 15px;
-}
-
-.photo-user {
+.navbar__photo-logout {
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -312,73 +298,91 @@ body {
 
 
 
-/*-------------------------*\
-           Panel
-\*-------------------------*/
 
-.profile-link-panel {
-    font-weight: bold;
-    padding-left: 10px;
-    text-decoration: none;
-    color: #43707B;
-}
 
-.profile-link-panel:hover {
-    font-weight: bold;
-    padding-left: 10px;
-    text-decoration: none;
-    color: #43707B;
-}
-.post-time {
-    color: #A0A0A0;
-}
+/*-----------------------------------------*\
+     Forum-Panel (Header, Body, 
+     Notification'btn, Footer (Reply'btn))
+\*-----------------------------------------*/
 
-.title-of-panel {
-    font-weight: bold;
-}
+/* 
+ *    header- panel 
+ */
 
-.panel-heading {
+.panel_-heading {
     min-height: 70px;
     border-bottom: none;
 }
 
-.right-notification-panel {
-    margin-top: -16px;
+.panel__header-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
 }
 
-.post-number-panel {
-    border-left: 1px dashed #ccc;
+.panel__header-profile-link {
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #43707B;
+}
+
+.panel__header-profile-link:hover {
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #43707B;
 }
 
 
+/* 
+ *    Panel-Body
+ */
 
-
-
-/*--------------------------------------------*\
-    Modal-repy (inside Notification's popup)
-\*--------------------------------------------*/
-
-.modal-reply {
-    height: 500px;
-    overflow: auto;
+.panel__body-time {
+    color: #A0A0A0;
 }
 
-.post-number-panel {
+.panel__body-title {
+    font-weight: bold;
+}
+
+
+/*
+ *    Noification button insde Panel-Body
+ */
+
+.notification__btn {
+    color: #4f7080; 
+}
+
+.notification__btn:hover {
+    text-decoration: none;
+}
+
+.notification__btn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.post__number {
     text-align: center;
     border-bottom: dashed 1px black; 
     padding-bottom: 5px;
     border-left: none;
 }
 
-.notification-text-icon {
-    color: 
+
+/*
+ *   Modal inside notification-btn insde Panel-Body.
+ */
+
+.notification-modal__reply-comment {
+    height: 500px;
+    overflow: auto;
 }
 
-.notification-text-icon:hover {
-    text-decoration: none;
-}
-
-.photo-user-modal {
+.notification-modal__user-photo{
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -387,67 +391,70 @@ body {
     padding-right: 1px;
 }
 
-.username-modal {
+.notification-modal__username {
     font-weight: bold;
     text-decoration: none;
     color: #43707B;
 }
 
-.body-reply-modal {
+.notification-modal__body-text{
     margin-bottom: 20px;
     font-size: 13px;
 }
 
-.panel-comment {
+.notification-modal__panel-comment {
     border-radius: 0px;
     border-bottom: solid 2px #43707B;
     padding-left: 10px;
 }
 
-.post-time-modal {
+.notification-modal__post-time {
     font-size: 10px;
     text-align: right;
     margin-bottom: 1px;
 }
 
-.input-reply-text {
-    background-color: #4f7080;
-    color: white;
+
+/*
+ *  Panel footer
+ */
+
+
+/*
+ *  Reply-btn and dropdown-textarea 
+    inside Panel-Footer
+ */
+
+.panel__footer {
+    margin-top: 10px;
+    text-align: right;
 }
 
+@media screen and (max-width: 450px) {
+ .panel__footer  {
+    margin-top: 30px;
+    text-align: center;
+    }
+}
 
-
-
-
-/*--------------------------*\
-   Reply-input inside Panel
-\*--------------------------*/
-
-.btn-reply-footer {
+.panel__footer-reply-btn {
     background-color: #4f7080;
     border: none;
     width: 100px;
     border:solid 1px #4f7080;
     border-radius: 4px;    
 }
-.reply-footer {
-    margin-top: 10px;
-    text-align: right;
+
+.panel__footer-reply-btn:focus {
+    outline: none;   
 }
 
-@media screen and (max-width: 450px) {
- .reply-footer {
-    margin-top: 30px;
-    text-align: center;
-    }
-}
-
-.drop-down-reply {
+.panel__footer-reply-dropdown {
     background-color: white;
     margin-top: 10px;
 }
 
-.insert-reply-comment{
+.panel__footer-insert-comment {
     resize: vertical;
     width: 100%;
     padding-left: 10px;
@@ -457,53 +464,8 @@ body {
     background-color: #f5f5f5
 }
 
-.insert-reply-comment:focus{
+.panel__footer-insert-comment:focus{
     background-color: white;
-}
-
-
-
-
-
-
-/*--------------------------------------------*\
-    Modal-repy (inside Notification's popup)
-\*--------------------------------------------*/
-
-.modal-reply {
-    height: 500px;
-}
-
-.photo-user-modal {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-right: 1px;
-}
-
-.username-modal {
-    font-weight: bold;
-    text-decoration: none;
-    color: #43707B;
-}
-
-.body-reply-modal {
-    margin-bottom: 20px;
-    font-size: 13px;
-}
-
-.panel-comment {
-    border-radius: 0px;
-    border-bottom: solid 2px #43707B;
-    padding-left: 10px;
-}
-
-.post-time-modal {
-    font-size: 10px;
-    text-align: right;
-    margin-bottom: 1px;
 }
 
 
@@ -511,67 +473,25 @@ body {
 
 
 /*-----------------------------*\
-  Footer/rights/socialnetworks
+    Page footer,
+    (Rights, Socialnetwork)
 \*-----------------------------*/
 
-.footer {
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.forum-rights-footer {
+.forum__footer-rights {
     margin-top: 8px;
     color: white;
     padding-left: 0px;
 }
 
-.social-network-footer {
+
+
+/*
+ *   Social-NetWork's
+ */
+
+.forum__footer-social-network {
     text-align: right;
 }
-
-.btn-reply {
-    background-color: white;
-    border: none;
-    margin-top: 7px;
-    color: #4f7080;
-    font-weight: bold;
-    outline: none;
-}
-
-.btn-reply:focus {
-    border: none;
-}
-
-.btn-reply:active {
-    border: none;
-}
-
-.slider-reply {
-    max-width: 100%;
-    height: 10px;
-    border: none;
-    box-shadow: none;
-}
-
-.input-text {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid 1px #4f7080;
-    width: 600px;
-    outline: none;
-    padding-left: 3px;
-    background-color: #f5f5f5;
-    border-radius: 0px;
-}
-
-
-
-
-
-/*---------------------*\
-    Social-NetWork's
-\*---------------------*/
 
 #social-fb:hover {
     color: #3B5998;
