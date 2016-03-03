@@ -8,6 +8,7 @@ body {
 
 
 
+
 /*--------------------*\
       slide-cover
 \*--------------------*/
@@ -106,6 +107,7 @@ body {
 
 
 
+
 /*---------------------------------------------*\
     Forum Navigation-bar (Logo, Search'from,
      New topic-Btn (module), 
@@ -151,8 +153,6 @@ body {
         padding-left: 0px;
     }
 }
-
-
 
 .search-icon.addon-md .glyphicon,
 .search-icon .glyphicon,
@@ -242,9 +242,6 @@ body {
 }
 
 
-
-
-
 /*
  * Inside The new topic 'Module
  */
@@ -279,9 +276,6 @@ body {
     border: solid 1px #333366;
     color: #43707B;
 }
-
-
-
 
 
 /*
