@@ -299,6 +299,7 @@ body {
      Notification'btn, Footer (Reply'btn))
 \*-----------------------------------------*/
 
+
 /* 
  *    header- panel 
  */
@@ -416,7 +417,7 @@ body {
 
 /*
  *  Reply-btn and dropdown-textarea 
-    inside Panel-Footer
+ *  inside Panel-Footer
  */
 
 .panel__footer {

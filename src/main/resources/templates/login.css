@@ -19,6 +19,10 @@ body {
     height: 70px;
 }
 
+
+/*
+ *  NavigationBar logo (forum.jpg)
+ */
 .nav-logo img {
     width: 100px;
     height: 70px;
@@ -34,21 +38,22 @@ body {
        Login form
 \*--------------------*/
 
-.login_user-photo {
+
+/*
+ *  Login photo
+ */
+
+.login__photo {
     width: 120px;
     height: 120px;
     border-radius: 100%;
     margin-top: 20px;
 }
 
-.login-form {
-    color: #919191;
-    padding: 10px 20px;
-}
 
-.login-form p {
-    margin-bottom: 5px;
-}
+/*
+ *  Login Form
+ */
 
 .login-form-1 {
     width: 340px;
@@ -61,7 +66,7 @@ body {
     margin-top: 30px;
 }
 
-.login-form-1 .form-control {
+.login__input-form {
     border: 0;
     box-shadow: 0 0 0;
     border-radius: 0;
@@ -72,8 +77,12 @@ body {
     height: auto;
 }
 
+.login__input-form:focus {
+    outline: none;
+}
 
-.login-form-1 .form-group {
+
+.login__form-row {
     margin-bottom: 0;
     border-bottom: 2px solid #efefef;
     padding-right: 20px;
@@ -81,23 +90,24 @@ body {
     position: relative;
 }
 
-.login-form-1 .form-group:last-child {
+.login__form-row:last-child {
     border-bottom: 0;
 }
 
-.login-group {
+.login__form-group {
     background: #ffffff;
     color: #999999;
     border-radius: 8px;
     padding: 10px 20px;
 }
 
-.login-group-checkbox {
+.login__form-checkbox {
     padding: 5px 0;
 }
 
-.login-form-personal {
-
+.login__form-footer {
+    color: #919191;
+    padding: 10px 20px;
 }
 
 
@@ -106,7 +116,7 @@ body {
     Login fomrm (panel)
 \*-----------------------*/
 
-.login-form-1 .login-button {
+.login-button {
     position: absolute;
     right: -25px;
     top: 50%;
