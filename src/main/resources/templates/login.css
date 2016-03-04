@@ -34,7 +34,7 @@ body {
        Login form
 \*--------------------*/
 
-.login-photo {
+.login_user-photo {
     width: 120px;
     height: 120px;
     border-radius: 100%;

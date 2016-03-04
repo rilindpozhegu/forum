@@ -10,11 +10,32 @@ body, html{
 
 
 
+/*-------------------*\
+    Navigation bar
+\*-------------------*/
+
+.navbar {
+    background-color: #484848;
+    height: 70px;
+}
+
+.nav-logo img {
+    width: 100px;
+    height: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
 /*---------------------*\
     Signup-moto-title
 \*---------------------*/
 
-.signup-moto-title {  
+.signup__title {  
     font-weight: bold;
     color: #4f7080;
     text-align: center;
@@ -25,19 +46,21 @@ body, html{
 
 
 
+
 /*-------------------------*\
            Contetnt
 \*-------------------------*/
 
-.content {
+.signup__content {
     padding-top: 70px;
 }
 
 @media screen and (max-width: 450px) {
-    .content {
+    .signup__content {
     padding-top: 30px;
     }
 }
+
 
 
 
@@ -47,13 +70,13 @@ body, html{
         Input label's
 \*-------------------------*/
 
-.label-inputs {
+.signup__input-label {
     text-align: right;
     padding-top: 5px;
 }
 
 @media screen and (max-width: 450px) {
-    .label-inputs {
+    .signup__input-label {
         text-align: left;
         padding-top: 5px;
     }
@@ -63,44 +86,42 @@ body, html{
     padding-top: 20px;
 }
 
+
+
+
+
+
 /*---------------------*\
       Signup button
 \*---------------------*/
 
-.Signup {
+.signup__signup-btn {
     width: 200px;
     height: 40px;
     background-color: #43707B;
     color: white;
     font-weight: bold;
     margin-left: 90px;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 450px) {
-    .Signup {
-        width: 200px;
-        height: 40px;
-        background-color: #43707B;
-        color: white;
-        font-weight: bold;
+    .signup__signup-btn {
         margin-left: 60px;
-        margin-top: 0px;
+        margin-top: 30px;
     }
 }
 
-.Signup:hover {
+.signup__signup-btn:hover {
     background-color: #333366;
     color: white;
     font-weight: bold;
 }
 
-.Signup:focus {
+.signup__signup-btn:focus {
     background-color: #333366;
     color: white;
     font-weight: bold;
 }
 
-.button-signup {
-    padding-top: 25px;
-}
+
