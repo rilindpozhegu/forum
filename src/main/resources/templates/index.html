@@ -25,69 +25,74 @@
 
         <!-- Navigationbar ku perfshihen, 'Logo', 'SearchBar' 'Start New topic' dhe 'userphoto + dropdown' -->
 
-        <nav class="navbar  navbar-default  forum-navbar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"  aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="http://localhost/forum/src/main/resources/templates/">
-                    <img class="logo-forum" src="logo-forum.png">
-                </a>
-            </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a href="http://localhost/forum/src/main/resources/templates/">
+                             <img class="logo-forum" src="logo-forum.png">
+                        </a>
+                </div>
 
-            <div class="collapse  navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form  navbar-left" role="search">
-                    <div class="form-group">
-                        <div class="search-icon addon-lg">
-                            <input type="text" placeholder="Search" class="form-control">
-                            <label for="text" class="glyphicon  glyphicon-search" rel="tooltip" title="search"></label>
-                        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   
+            <form class="navbar-form  navbar-left" role="search">
+                <div class="form-group">
+                    <div class="search-icon addon-lg">
+                        <input type="text" placeholder="Search" class="form-control search-form">
+                        <label for="text" class="glyphicon  glyphicon-search" rel="tooltip" title="search"></label>
                     </div>
-
-                    <!-- Butoni Start New Topic -->
-                    <button type="button" class="btn btn-default  navnar__new-topic-btn" data-toggle="modal" data-target="#toipc_modal">Start New Topic</button>
-                    <div class="modal fade" id="toipc_modal" role="dialog">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal__header-title">Start New Topic  </h4>
-                                </div>
-                                <div class="modal-body">
-                                    <h4>Insert Title:</h4>
-                                    <input type="text" class="modal__body-input" placeholder="Insert Title">
-                                    <h4>Insert Text:</h4>
-                                    <textarea class="modal__body-textarea" rows="4" placeholder="Insert Text"></textarea>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default modal__footer-button" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-default modal__footer-button" data-dismiss="modal">Done</button>
-                                </div>
+                </div>
+            <button type="button" class="btn btn-default  navnar__new-topic-btn" data-toggle="modal" data-target="#toipc_modal">Start New Topic</button>
+                <div class="modal fade" id="toipc_modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal__header-title">Start New Topic  </h4>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Insert Title:</h4>
+                                <input type="text" class="modal__body-input" placeholder="Insert Title">
+                                <h4>Insert Text:</h4>
+                                <textarea class="modal__body-textarea" rows="4" placeholder="Insert Text"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default modal__footer-button" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default modal__footer-button" data-dismiss="modal">Done</button>
                             </div>
                         </div>
                     </div>
-                </form>
-                <ul class="nav navbar__user-photo navbar-right">
-                    <li class="dropdown  profile-dropdown">
-                        <a href="#" class="dropdown-toggle  img-dropdown" data-toggle="dropdown" role="button"><img class="navbar__photo-logout" src="skenderbeu.jpg"> <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="profile.html"><i class="fa fa-user"></i> Profile</a>
-                            </li>
-                            <li><a href="login.html"><i class="fa fa-sign-in"></i> Logout</a>
-                            </li>
-                            <li><a href="login.html"><i class="fa fa-sign-in"></i> Login.html</a>
-                            </li>
-                            <li><a href="signup.html"><i class="fa fa-sign-in"></i> Signup</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                </div>
+            </form>
+
+        <ul class="nav navbar-nav navbar-right navbar__photo-logout1">
+       
+         <li class="dropdown  profile-dropdown">
+            <a href="#" class="dropdown-toggle  img-dropdown" data-toggle="dropdown" role="button"><img class="navbar__photo-logout" src="skenderbeu.jpg"> <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> Logout</a>
+                </li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> Login.html</a>
+                </li>
+                <li><a href="signup.html"><i class="fa fa-sign-in"></i> Signup</a>
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>        
 
         <!-- Pjesa e panelit -->
         <div class="panel  panel-default">
@@ -292,15 +297,14 @@
 
     <!-- Pjesa e Footer -->
     <div class="container">
-        <div class="col-md-6  forum__footer-rights"><i class="fa  fa-copyright"></i> 2016 Forum All Rights Reserved.</div>
-        <div class="col-md-6  forum__footer-social-network">
-            <a href="#"><i id="social-fb" class="fa fa-facebook-square  fa-2x social"></i></a>
-            <a href="#"><i id="social-tw" class="fa fa-twitter-square  fa-2x social"></i></a>
-            <a href="#"><i id="social-gp" class="fa fa-google-plus-square  fa-2x social"></i></a>
-            <a href="#"><i id="social-em" class="fa fa-envelope-square  fa-2x social"></i></a>
+        <div class="col-md-6  footer-copyright"><i class="fa  fa-copyright"></i> 2016 Forum All Rights Reserved.</div>
+        <div class="col-md-6  footer-social-network">
+            <a href="#"><i id="social_network" class="fa fa-facebook-square  fa-2x social"></i></a>
+            <a href="#"><i id="social_network" class="fa fa-twitter-square  fa-2x social"></i></a>
+            <a href="#"><i id="social_network" class="fa fa-google-plus-square  fa-2x social"></i></a>
+            <a href="#"><i id="social_network" class="fa fa-envelope-square  fa-2x social"></i></a>
         </div>
     </div>
-
     <!-- Bootstrap script's -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -174,22 +174,11 @@ body {
 	}
 }
 
-
-#social-fb:hover {
-    color: #3B5998;
+.footer-social-network {
+    text-align: right;
 }
 
-#social-tw:hover {
-    color: #4099FF;
+#social_network:hover {
+    color: #484848;
+    transition: all 0.7s ease;
 }
-
-#social-gp:hover {
-    color: #d34836;
-}
-
-#social-em:hover {
-    color: #f39c12;
-}
-
-
-

@@ -110,6 +110,17 @@ body {
     padding: 10px 20px;
 }
 
+.login__form-footer .click__here:hover {
+    color: #484848;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.create__new-account:hover {
+    color: #484848;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
 
 
 /*-----------------------*\
@@ -138,19 +149,11 @@ body {
     Social-Network-icons
 \*-----------------------*/
 
-
-#social-fb:hover {
-    color: #3B5998;
+.footer-social-network {
+    text-align: right;
 }
 
-#social-tw:hover {
-    color: #4099FF;
-}
-
-#social-gp:hover {
-    color: #d34836;
-}
-
-#social-em:hover {
-    color: #f39c12;
+#social_network:hover {
+    color: #484848;
+    transition: all 0.7s ease;
 }
